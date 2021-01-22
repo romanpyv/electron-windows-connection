@@ -1,0 +1,40 @@
+.frame-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background: #3d3d3d;
+    color: white;
+    -webkit-app-region: drag;
+
+    .frame-title {
+        width: 120px;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin: 0;
+        padding: 3px 3px 3px 5px;
+    }
+
+    .frame-actions {
+        display: flex;
+
+        .frame-action {
+            border: 0;
+            background: none;
+            color: white;
+            border-radius: 0;
+            outline: none!important;
+            padding: 4px 9px;
+            -webkit-app-region: no-drag;
+
+            &:hover, &:active {
+                background: rgba(0,0,0,0.3);
+            }
+         }
+    }
+}
+
+
+
+
+
